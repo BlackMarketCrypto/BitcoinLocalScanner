@@ -1,0 +1,55 @@
+# Bitcoin Local Scanner v1.0 Configuration File
+# Edit these settings to customize the scanner behavior
+
+# ===== GENERAL SETTINGS =====
+# Number of CPU threads to use for scanning
+# Recommended: Set to your CPU core count or slightly less
+# Default: 8 (adjust based on your system)
+num_threads = 8
+
+# Number of wallets to scan (0 = infinite scanning)
+# Set to a specific number to limit the scan
+target_wallets = 0
+
+# Enable multiple address types (BIP44, BIP49, BIP84)
+# true = Check Legacy, SegWit, and Native SegWit addresses (slower but comprehensive)
+# false = Check only Legacy addresses (faster)
+multiple_addresses = true
+
+# ===== BLOCKCHAIN SETTINGS =====
+# Path to Bitcoin Core blockchain data directory
+# This should point to the 'blocks' folder in your Bitcoin Core installation
+# Windows default: C:\Users\%USERNAME%\AppData\Roaming\Bitcoin\blocks
+# Custom example: D:\Bitcoin\blocks
+# Leave empty to use online APIs (slower and requires internet)
+bitcoin_blockchain_path = C:\Bitcoin\blocks
+
+# ===== OUTPUT SETTINGS =====
+# File to save wallets with balance
+output_file = bitcoin_wallets_with_balance.txt
+
+# Database file to track checked seed phrases (prevents duplicates)
+database_file = checked_seeds.db
+
+# ===== PERFORMANCE SETTINGS =====
+# Enable real-time dashboard display
+dashboard_enabled = true
+
+# Dashboard update interval in seconds
+dashboard_update_interval = 1
+
+# ===== ADVANCED SETTINGS =====
+# Scan timeout in seconds (0 = no timeout)
+scan_timeout = 0
+
+# Enable memory optimization (may reduce performance slightly)
+memory_optimization = false
+
+# Enable verbose logging
+verbose_logging = false
+
+# ===== NOTES =====
+# - Ensure Bitcoin Core is installed and fully synchronized for best performance
+# - Higher thread counts may improve speed but use more system resources
+# - Multiple address types increase chances of finding wallets but slow down scanning
+# - Keep this file secure as it contains your scanner configuration

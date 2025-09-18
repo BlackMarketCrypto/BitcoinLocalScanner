@@ -1,0 +1,100 @@
+Bitcoin Local Scanner v1.0 - Release Notes
+===============================================
+
+Release Date: September 15, 2025
+Version: 1.0.0
+Build: Production Release
+
+WHAT'S NEW IN v1.0:
+===================
+
+✨ CORE FEATURES:
+- High-performance multi-threaded Bitcoin wallet scanner
+- Local blockchain scanning (no internet required during operation)
+- Support for multiple address formats (Legacy, SegWit, Native SegWit)
+- Configurable settings via config.txt file
+- Real-time progress dashboard with statistics
+- Comprehensive seed phrase generation using BIP39 standard
+- Duplicate prevention database to avoid re-scanning
+
+🔧 CONFIGURATION SYSTEM:
+- Easy-to-edit config.txt file
+- Configurable Bitcoin blockchain path
+- Adjustable CPU thread count for optimal performance
+- Multiple scanning options and performance settings
+- Output file customization
+
+📊 PERFORMANCE FEATURES:
+- Multi-threaded processing for maximum speed
+- Optimized memory usage
+- Real-time scanning statistics
+- Per-thread performance monitoring
+- Configurable dashboard update intervals
+
+🛡️ SECURITY & RELIABILITY:
+- Cryptographically secure random seed generation
+- Local blockchain access (no external API dependencies)
+- Comprehensive error handling and validation
+- Safe wallet discovery and logging
+
+SYSTEM REQUIREMENTS:
+===================
+- Windows 10/11 (64-bit)
+- 4+ GB RAM (8+ GB recommended)
+- 2+ CPU cores (4+ cores recommended)
+- 500+ GB storage for Bitcoin blockchain
+- Bitcoin Core installed and synchronized
+
+INCLUDED FILES:
+===============
+- BitcoinLocalScanner.exe (Main executable)
+- config.txt (Configuration file)
+- README.txt (Comprehensive user manual)
+- Source/ (Source code for reference)
+  - bitcoin_local_scanner.py (Main scanner source)
+  - compile_main_to_exe.py (Compilation script)
+
+QUICK START GUIDE:
+==================
+1. Install and synchronize Bitcoin Core
+2. Edit config.txt to set your blockchain path
+3. Configure thread count and other settings
+4. Run BitcoinLocalScanner.exe
+5. Monitor progress in real-time dashboard
+6. Check results in bitcoin_wallets_with_balance.txt
+
+IMPORTANT NOTES:
+================
+- Ensure Bitcoin Core is fully synchronized before use
+- Close Bitcoin Core application before running scanner
+- This tool is for educational and legitimate recovery purposes only
+- Users are responsible for compliance with local laws
+- Keep discovered wallet information secure and private
+
+SUPPORT & DOCUMENTATION:
+========================
+For detailed instructions, troubleshooting, and configuration options,
+please refer to the comprehensive README.txt file included in this release.
+
+The source code is provided for transparency and educational purposes.
+Users can review, modify, and recompile as needed.
+
+TECHNICAL SPECIFICATIONS:
+=========================
+- Programming Language: Python 3.9+
+- Cryptographic Libraries: BIP32, BIP39, coincurve
+- Blockchain Format: Bitcoin Core format
+- Address Types: P2PKH, P2SH-P2WPKH, P2WPKH
+- Database: SQLite for seed tracking
+- Compilation: PyInstaller for standalone executable
+
+LEGAL DISCLAIMER:
+=================
+This software is provided "as-is" without warranty of any kind.
+Users are solely responsible for ensuring legal compliance in their
+jurisdiction. The software is intended for educational purposes and
+legitimate wallet recovery scenarios only.
+
+===============================================
+Bitcoin Local Scanner v1.0 - January 2024
+===============================================

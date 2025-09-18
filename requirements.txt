@@ -1,0 +1,41 @@
+# Bitcoin Local Scanner Dependencies
+# Install with: pip install -r requirements.txt
+
+# Mnemonic seed phrase generation
+mnemonic==0.20
+
+# BIP32 key derivation
+bip32==3.4
+
+# Console colors for Windows
+colorama==0.4.6
+
+# HTTP requests
+requests==2.31.0
+
+# Asynchronous HTTP client/server
+aiohttp==3.8.5
+
+# Progress bars
+tqdm==4.66.1
+
+# Cryptographic functions
+cryptography==41.0.7
+
+# ECDSA for Bitcoin key operations
+ecdsa==0.18.0
+
+# Base58 encoding (alternative implementation)
+base58==2.1.1
+
+# Additional crypto utilities
+pycryptodome==3.19.0
+
+# For better performance with large files
+numpy==1.24.3
+
+# Bitcoin library for additional utilities
+bitcoin==1.1.42
+
+# Optional: More comprehensive Bitcoin library
+bit==0.8.0
